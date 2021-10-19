@@ -1,14 +1,17 @@
 // Fun with Classes
 
+// Let's declare parent class
 class Animal{
     constructor(type){
         this.type = type;
     }
+ //Declaring Method called intro
     intro(){
         console.log("This is",this.type);
 
     }
 }
+//Parent class has two children classes
 class Carnivore extends Animal{
     constructor(type,eat){
         super(type);
@@ -19,6 +22,7 @@ class Carnivore extends Animal{
         console.log(this.type,"eats",this.eat);
     }
 }
+//Parent class has two children classes
 class Herbivore extends Animal{
     constructor(type,eat){
         super(type);
